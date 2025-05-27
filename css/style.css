@@ -40,3 +40,145 @@ display:flex;
 
 a{
 margin-top: 50px;}
+
+/* css/style.css */
+
+/* Import Google Font Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    color: #2c3e50;
+    margin: 0;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    background: #fff;
+    max-width: 700px;
+    width: 100%;
+    border-radius: 16px;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.2);
+    padding: 40px 50px;
+    box-sizing: border-box;
+}
+
+nav {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+nav a {
+    color: #6a11cb;
+    text-decoration: none;
+    margin: 0 18px;
+    font-weight: 600;
+    font-size: 16px;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -6px;
+    left: 50%;
+    background-color: #2575fc;
+    transition: width 0.3s ease, left 0.3s ease;
+    border-radius: 2px;
+}
+
+nav a:hover {
+    color: #2575fc;
+}
+
+nav a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+hr {
+    border: none;
+    border-top: 3px solid #2575fc;
+    margin-bottom: 40px;
+    border-radius: 2px;
+    max-width: 80px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 2.8rem;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #6a11cb;
+    letter-spacing: 1px;
+}
+
+p {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    margin-bottom: 24px;
+    color: #444;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 30px;
+}
+
+ul li {
+    position: relative;
+    padding-left: 28px;
+    margin-bottom: 14px;
+    font-size: 1.1rem;
+    color: #333;
+    font-weight: 500;
+}
+
+ul li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    top: 2px;
+    color: #2575fc;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+i {
+    color: #6a11cb;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 1.1rem;
+    display: block;
+    margin-bottom: 12px;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+    .container {
+        padding: 30px 25px;
+    }
+
+    nav a {
+        margin: 0 10px;
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    p, ul li {
+        font-size: 1rem;
+    }
+}

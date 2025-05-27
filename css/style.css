@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 25px;
+    background-color:white;
+}
+
+nav a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #333;
+}
+h1,.c1,.s1{
+text-align: center ;
+}
+
+#p1{
+text-align:center ;
+}
+
+
+nav a:hover {
+    color: green;
+}
+
+.s1{
+max-width:600px;
+margin:0 auto;
+}
+
+.profile{
+display:flex;
+}
+
+.profile-text {
+  flex: 1;
+  margin-left:50px;
+  text-align: left;
+  max-width: 600px;
+}
+
+a{
+margin-top: 50px;}
